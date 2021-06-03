@@ -17,7 +17,7 @@ const ListStargazersModal :React.FC<ModalProps>=({isShow,toggleShow,url,total_st
    
     useEffect(()=>{
         if(isShow){
-            onGetListStargazer({url:`${url}?page=${pageIndex}`})
+            onGetListStargazer({url:`${url}?page=${1}`})
         }
     },
     // eslint-disable-next-line

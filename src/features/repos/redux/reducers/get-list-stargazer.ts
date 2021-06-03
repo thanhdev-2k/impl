@@ -9,7 +9,7 @@ import { GetListStargazerActionTypes, GetListStargazerState, GET_LIST_STARGAZERS
   export default (state = initialState, action: GetListStargazerActionTypes): GetListStargazerState => {
     switch (action.type) {
       case GET_LIST_STARGAZERS: 
-      if(action.payload.url !== state.url){
+      if(action.payload.url.split('?')[0] !== state.url.split('?')[0]){
         return {
           ...state,
           data:[],
