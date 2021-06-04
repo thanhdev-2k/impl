@@ -9,6 +9,8 @@ interface ModalProps{
     total_stargzer:number
 }
 
+
+
 const ListStargazersModal :React.FC<ModalProps>=({isShow,toggleShow,url,total_stargzer})=>{
 
     const {onGetListStargazer,data, loading} = useGetListStargazer()

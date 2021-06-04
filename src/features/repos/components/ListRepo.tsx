@@ -9,6 +9,7 @@ interface ListRepoProps{
   total_repos:number;
 }
 
+
 const ListRepo :React.FC<ListRepoProps> = ({loading, data, loadMore, total_repos})=>{
 
     const [state, setState]= useState({
